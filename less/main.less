@@ -13,8 +13,17 @@
 //animations
 @ease: color 0.5s ease;
 
-//  WOW this is the scale of the inner elements
+//  base
 @base: 15.5px;
+
+//widths
+@max: 1600px;
+@min: 320px;
+
+@large: 1440px;
+@inbetween: 1240px;
+@medium: 1024px;
+@small: 425px;
 
 html, body {
 	margin: 0;
@@ -86,7 +95,7 @@ a {
 
 #nav {
 	width: 125px;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
 	padding-bottom: 4%;
 	color: @black;
