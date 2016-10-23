@@ -8,7 +8,7 @@
 //colours
 @black: #2E2E2E;
 @white: #fff;
-@blue: #009999;
+@blue: #5b8899;
 
 //animations
 @ease: color 0.5s ease;
@@ -25,9 +25,11 @@
 @medium: 1024px;
 @small: 425px;
 
+
 html, body {
 	margin: 0;
   	padding: 0;
+  	font-size: 62.5%;
   	background-color: @white;
   	-webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1.5s; /* Firefox < 16 */
@@ -57,19 +59,23 @@ html, body {
 h1 {
 	font-family: @primary-font;
 	text-transform: uppercase;
-	font-size: 3em;
-	letter-spacing: 0.95em;
+	font-size: 4.5rem;
+	margin-top: 0;
+	//letter-spacing: 0.25em;
 }
 
 h2 {
 	font-family: @primary-font;
 	text-transform: uppercase;
-	font-size: 2em;
-	letter-spacing: 0.95em;
+	font-size: 3rem;
+	margin-top: 0;
+	// letter-spacing: 0.95em;
 }
+
 
 p {
 	font-family: @secondary-font;
+	font-size: 1.6rem;
 	margin: 0;
 	padding-bottom: 1em;
 }
@@ -94,14 +100,24 @@ a {
 }
 
 #nav {
-	width: 125px;
-	position: absolute;
-	bottom: 0;
-	padding-bottom: 4%;
-	color: @black;
+	width: 15%;
+	min-width: 150px;
+	position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    color: @black;
+    left: 0;
+    overflow-x: hidden;
+    background: url("/media/img/logo-bg.png");
+    background-position: center;
 	> div {
 		margin: 0 auto;
 		padding: 0;
+		position: absolute;
+		bottom: 5%;
+		left: 0;
+    	right: 0;
 	}
 
 	ul, li {
@@ -167,7 +183,7 @@ a {
 }
 
 #about {
-	width: 80%;
+	width: 60%;
 	max-width: 1600px;
 	margin: 0 auto;
  	color: @black;
@@ -196,7 +212,7 @@ a {
 	}
 
 	.about-main {
-		width: 45%;
+		width: 55%;
 		margin: 0 auto;
 	}
 
@@ -206,7 +222,7 @@ a {
 			padding-bottom: 1em;
 			text-transform: uppercase;
 			font-family: @secondary-font;
-			font-size: 1.5em;
+			font-size: 1.8rem;
 			letter-spacing: 0.25em;
 			text-align: center;
 		}
@@ -214,7 +230,7 @@ a {
 }
 
 #projects {
-	width: 80%;
+	width: 60%;
 	max-width: 1600px;
 	margin: 0 auto;
  	color: @black;
@@ -294,6 +310,7 @@ form.contact-form {
 			    border-bottom: 3px solid rgba(0,0,0,0);
 			    text-align: left;
 			    font-family: @primary-font;
+			    font-size: 1.15em;
 	        }
 	        
 	        textarea {
@@ -310,6 +327,7 @@ form.contact-form {
 	            min-height: 100px;
 	            margin: 0;
 	            font-family: @primary-font;
+	            font-size: 1.15em;
 	        }
         }
 
@@ -319,9 +337,8 @@ form.contact-form {
 	        display: inline-block;
 	        background: rgba(255, 255, 255, 0);
 	        font-weight: inherit;
-	        font-family: inherit;
-	        font-size: inherit;
 	        font-family: @primary-font;
+	        font-size: 1.25em;
 	        text-transform: uppercase;
 	        color: @black;
 	        &:hover {
