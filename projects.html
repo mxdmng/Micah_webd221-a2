@@ -6,20 +6,18 @@
     <title>M I C A H: Projects</title>
 </head>
 <body>
-    <div id="nav">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div>
-            <div class="nav-menu">
-                <ul>
-                    <li><p><a href="about.html">Who am I</a></p></li>
-                    <li><p><a href="projects.html">Projects</a></p></li>
-                    <li><p><a href="contact.html">Contact</a></p></li></li>
-                </ul>
-             </div>
+            <a href="about.html">Who am I</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
             <div class="nav-logo">
-                <a href="index.html"><img src="media/img/logo.png" alt="micah domingo logo"></a>
+                <a href="index.html"><img src="media/svg/logo-w.svg" alt="micah domingo logo"></a>
             </div>
         </div>
     </div>
+    <span class="openbtn" onclick="openNav()">&#9776;</span>
     <div id="projects">
     	<div>
             <div class="projects-headings">
@@ -30,26 +28,26 @@
                 <div class="project-slide">
                     <img src="">
                     <div class="project-slide-desc">
-                        <h2>Title of Project</h2>
-                        <p>Short desc</p>
+                        <h2>PROJECTS COMING SOON</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     </div>
                 </div><div class="project-slide">
                     <img src="">
                     <div class="project-slide-desc">
-                        <h2>Title of Project</h2>
-                        <p>Short desc</p>
+                        <h2>PROJECTS COMING SOON</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     </div>
                 </div><div class="project-slide">
                     <img src="">
                     <div class="project-slide-desc">
-                        <h2>Title of Project</h2>
-                        <p>Short desc</p>
+                        <h2>PROJECTS COMING SOON</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     </div>
                 </div><div class="project-slide">
                     <img src="">
                     <div class="project-slide-desc">
-                        <h2>Title of Project</h2>
-                        <p>Short desc</p>
+                        <h2>PROJECTS COMING SOON</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
                     </div>
                 </div>
             </div>
@@ -78,5 +76,13 @@
     }
 </script>
 <script type="text/javascript">app.init()</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 </html>
